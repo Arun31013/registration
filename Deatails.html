@@ -1,0 +1,19 @@
+<html>
+<head>
+    <title> Details</title>
+</head>
+<body>
+    <form>
+    <h3>
+        Your Name is: <i id="name"></i><br>
+        Your email is: <i id="email"></i><br>
+        Your address is: <i id="address"></i>
+    </h3>
+    <script>
+        document.getElementById("name").innerHTML = localStorage.getItem("name");
+        document.getElementById("email").innerHTML = localStorage.getItem("email");
+        document.getElementById("address").innerHTML=localStorage.getItem("address");
+    </script>
+    </form>
+</body>
+</html>
